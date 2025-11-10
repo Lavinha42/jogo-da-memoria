@@ -16,6 +16,12 @@ const emojis = [
 "😺",
 "😺"
 ];
+
+const gameContainer = document.querySelector(".game");
+if (!gameContainer) {
+  console.error("Elemento .game não encontrado no HTML");
+}
+
 let openCards = [];
 
 let shuffleEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
